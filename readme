@@ -1,1 +1,6 @@
 This is just a school project to create a clone website that works like the KRA website 
+To use the website you need to do the following
+1. Install python and add it to path
+2. pip install django
+3. cd to the school-project main directory
+4. run this command in the terminal python manage.py runserver
