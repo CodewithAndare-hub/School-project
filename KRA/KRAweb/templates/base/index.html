@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f0f0f0;
+        }
+
+        header {
+          background-color: #fff;
+          color: #f00;
+          display: flex;
+          justify-content: space-between;
+          padding: 10px 20px;
+        }
+
+        nav {
+          display: flex;
+          align-items: center;
+        }
+
+        nav .logo {
+          font-size: 24px;
+          font-weight: bold;
+        }
+
+        nav ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+        }
+
+        nav li {
+          margin-right: 30px;
+        }
+
+        nav a {
+          color: #f00;
+          text-decoration: none;
+          padding: 5px 10px;
+          border-radius: 5px;
+        }
+
+        nav a:hover {
+          background-color: #f00;
+          color: #fff;
+        }
+
+        .button {
+          background-color: #f00;
+          color: #fff;
+          padding: 5px 10px;
+          border-radius: 5px;
+          font-size: 16px;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+
+        .button:hover {
+          background-color: #fff;
+          color: #f00;
+          border: 1px solid #f00;
+        }
+    </style>
+</head>
+<body>
+  <header>
+      <div class="logo">
+        <a href="/"><div><img src="{% static 'logo.webp' %}"></div></a>
+      </div>
+    <nav>
+      <ul>
+        <li><a href="/signup" class="button">signup</a></li>
+        <li><a href="/signin" class="button">signin</a></li>
+        <li><a href="/about">About us</a></li>
+      </ul>
+    </nav>
+   
+  </header>
+<div><img src="{% static 'manufx.jpg' %}" style="width:1600px;height:500px;"></div>
+<div style="display:flex;justify-content:space-between;background-color:#f0f0f0;">
+<div style="width:300px;">
+<h3>Tax Registration</h3>
+<p>
+    To register for taxes, you'll need to provide personal details like your full name, date of birth, and contact information. If you're registering as a business, include your business name, type, and address. Make sure to have identification documents handy, like your national ID or passport. Specify the type of tax you're registering for, such as income tax or VAT, and estimate your income or revenue for the tax year. If applicable, provide your business registration number and financial details. Don't forget to review everything for accuracy before submitting your registration.
+</p>
+</div>
+
+<div style="width:300px;">
+<h3>File Tax returns</h3>
+<p>To file tax returns, gather all necessary financial documents such as income statements, expense records, and receipts. Use these documents to accurately report your income, deductions, and credits for the tax year. If you're an individual taxpayer, you may use tax forms provided by your country's tax authority, while businesses typically use specific forms for their entity type. Double-check your entries for accuracy and completeness before submitting your return. Depending on your jurisdiction, you may file electronically through an online platform or by mailing a paper return. Be mindful of deadlines to avoid penalties for late filing. After submission, keep copies of your return and supporting documents for your records. If you're unsure about any aspect of filing, consider seeking assistance from a tax professional or using tax preparation software for guidance.</p>
+</div>
+
+<div style="width:300px;">
+    <h3>Tax Compliance Verification</h3>
+    <p>
+        Tax compliance verification involves ensuring that taxpayers are accurately fulfilling their tax obligations according to the laws and regulations of the jurisdiction. Tax authorities conduct various checks to verify compliance, which may include reviewing tax returns, conducting audits, and cross-referencing financial data with other sources. Taxpayers may be selected for verification randomly or based on specific risk factors such as discrepancies in reported income or high-risk industries. During verification processes, taxpayers may be required to provide additional documentation or clarification regarding their tax filings. Non-compliance with tax laws can result in penalties, fines, or legal actions, so it's essential for taxpayers to maintain accurate records and promptly address any issues identified during the verification process.
+    </p>
+</div></div>
+  <footer>
+    <div style="display:flex;justify-content:space-between;background-color:red;height:300px;">
+        <div>
+            <address>
+                <h1 style="color:white;">Contact us</h1>
+                <p style="color:white;">TEL 070-310300,070-281000
+                <p style="color:white;"> email:krakenya@gmail.com
+                <p style="color:white;">P.O Box 48240-00100 GPO
+                <p style="color:white;">Nairobi</p>
+            </address>
+        </div>
+        <div>
+          <h1 style="color:white;">Location</h1>
+          <p style="color:white;">Visit our various offices located in:</p>
+          <p style="color:white;">Nairobi</p>
+          <p style="color:white;">Kisumu</p>
+          <p style="color:white;">Eldoret</p>
+          <p style="color:white;">Mombasa</p>
+          
+        </div>
+        <div>
+          <h1 style="color:white;">Quick links</h1>
+          <p style="color:white;"><a href="/">Home</a></p>
+          <p style="color:white;"><a href="signup">Signup</a></p>
+          <p style="color:white;"><a href="signin">Signin</a></p>
+          <p style="color:white;"><a href="about">About Us</a></p>
+          <p style="color:white;"><a href="services">Services</a></p>
+          </div>
+    </div>
+  </footer>
+</body>
+</html>

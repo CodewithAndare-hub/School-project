@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KRA-Services</title>
+<style>
+    body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f0f0f0;
+          width:300;
+        }
+    header {
+          background-color: #fff;
+          color: #f00;
+          display: flex;
+          justify-content: space-between;
+          padding: 10px 20px;
+        }
+    nav {
+            background-color: #fff;
+            color: #f00;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+    nav a {
+        color: #f00;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    button[type="submit"] {
+        background-color: #f00;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+        width: 50%;
+    }
+
+    button[type="submit"]:hover{
+        background-color: #800000;
+    }    
+</style>
+</head>
+    <nav>
+        <a href="/">Kenya Revenue Authority</a>
+    </nav>
+<body>
+    
+    <h3>Welcome to KRA Itax website. Tulipe ushuru tujitegemee</h3>
+
+    {% if user.is_authenticated %}
+    <h3>Hello {{username}}</h3>
+    <h4>You have successfully logged in </h4>
+    <h5>Don't have a pin? <a href="pin-generator">Click here</a></h5>
+     <br>
+    <h5>To view our services and what we have to offer,<a href="services">Click here</a> to proceed</h5>
+    {% endif %}
+</body>
+<footer>
+    <button type="submit"><a href="/sign-out">sign-out</a></button>
+</footer>
+</html>
